@@ -1,4 +1,5 @@
 import './App.css';
+import doBello from './dobello.png'
 
 function Header(props) {
 
@@ -13,6 +14,7 @@ function Main(props) {
     return(
         <section>
             <p>Hi there, welcome to {props.pronoun} portfolio.</p>
+            <img src={doBello} alt='doBello logo'/>
             <ul>
                 {props.services.map((service) => 
                     <li key={service.id}>{service.title}</li>
