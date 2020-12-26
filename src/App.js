@@ -10,11 +10,11 @@ function RegularComponent() {
 // component names are case sentive and need upper camel case
 
 function App(props) {
-  if(props.authorised){
-    return <SecretComponent />
-  }else{
-    return <RegularComponent />
-  }
+    return (
+        <>
+        {props.authorised ? <SecretComponent /> : <RegularComponent />}
+        </>
+    );
 }
 
 export default App;
