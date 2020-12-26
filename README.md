@@ -1,4 +1,8 @@
-# Getting Started with Create React App
+# Learning React.Js
+
+This project was generated during the [React.js Essential Training](https://www.linkedin.com/learning/react-js-essential-training) course code-along
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
