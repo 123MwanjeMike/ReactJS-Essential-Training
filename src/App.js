@@ -13,6 +13,11 @@ function Main(props) {
     return(
         <section>
             <p>Hi there, welcome to {props.pronoun} portfolio.</p>
+            <ul>
+                {props.services.map((service) => 
+                    <li>{service}</li>
+                )}
+            </ul>
         </section>
     )
 }
@@ -25,11 +30,17 @@ function Footer(props) {
     )
 }
 
+const services = [
+    "Web development",
+    "App development",
+    "Search Engine Optimization"
+]
+
 function App() {
   return (
     <div className="App">
       <Header name="Dobello"/>
-      <Main pronoun="our"/>
+      <Main pronoun="our" services={services}/>
       <Footer year={new Date().getFullYear()}/>
     </div>
   );
