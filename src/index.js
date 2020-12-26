@@ -4,6 +4,9 @@ import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import App from "./App"
 
+const [,,third] = ["boots", "tent", "headlamp"];
+console.log(third)
+
 ReactDOM.render(
   <App authorised={true} />,
   document.getElementById('root')

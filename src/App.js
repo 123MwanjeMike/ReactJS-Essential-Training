@@ -9,10 +9,10 @@ function RegularComponent() {
 }
 // component names are case sentive and need upper camel case
 
-function App(props) {
+function App({authorised}) {
     return (
         <>
-        {props.authorised ? <SecretComponent /> : <RegularComponent />}
+        {authorised ? <SecretComponent /> : <RegularComponent />}
         </>
     );
 }
