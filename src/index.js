@@ -4,15 +4,13 @@ import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
-  React.createElement(
-    'ul',
-    null,
-    React.createElement('li', null, 'Monday'),
-    React.createElement('li', null, 'Tueday'),
-    React.createElement('li', null, 'Wednesday'),
-    React.createElement('li', null, 'Thurday'),
-    React.createElement('li', null, 'Friday'),
-  ),
+  <ul>
+      <li>Monday</li>
+      <li>Tuesday</li>
+      <li>Wednesday</li>
+      <li>Thursday</li>
+      <li>Friday</li>
+  </ul>,
   document.getElementById('root')
 );
 
