@@ -1,54 +1,20 @@
 import './App.css';
-import doBello from './dobello.png'
 
-function Header(props) {
-
-    return (
-        <header>
-            <h1>{props.name}'s Portfolio</h1>
-        </header>
-    )
+function SecretComponent() {
+    return <h1>Only authorized users can access this secret information</h1>
 }
 
-function Main(props) {
-    return(
-        <section>
-            <p>Hi there, welcome to {props.pronoun} portfolio.</p>
-            <img src={doBello} alt='doBello logo'/>
-            <ul>
-                {props.services.map((service) => 
-                    <li key={service.id}>{service.title}</li>
-                )}
-            </ul>
-        </section>
-    )
+function RegularComponent() {
+    return <h1>Anyone can access this component</h1>
 }
+// component names are case sentive and need upper camel case
 
-function Footer(props) {
-    return(
-        <footer>
-            <p>Copyright {props.year}</p>
-        </footer>
-    )
-}
-
-const services = [
-    "Web design",
-    "Web development",
-    "App development",
-    "Search Engine Optimization"
-]
-
-const ourServices = services.map((service, i) => ({id: i, title: service}));
-
-function App() {
-  return (
-    <div className="App">
-      <Header name="Dobello"/>
-      <Main pronoun="our" services={ourServices}/>
-      <Footer year={new Date().getFullYear()}/>
-    </div>
-  );
+function App(props) {
+  if(props.authorised){
+    return <SecretComponent />
+  }else{
+    return <RegularComponent />
+  }
 }
 
 export default App;

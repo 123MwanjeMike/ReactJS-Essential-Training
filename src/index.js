@@ -2,18 +2,11 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
-import App from "./App";
-
-function AppTwo() {
-  return <h1>This is the second app</h1>;
-}
+import App from "./App"
 
 ReactDOM.render(
-  <>
-    <App />
-    <AppTwo />
-  </>,
-  document.getElementById("root")
+  <App authorised={true} />,
+  document.getElementById('root')
 );
 
 // If you want to start measuring performance in your app, pass a function
