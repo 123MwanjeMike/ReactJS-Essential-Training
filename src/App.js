@@ -1,18 +1,21 @@
 import './App.css';
+import {useState} from "react";
 
-function SecretComponent() {
-    return <h1>Only authorized users can access this secret information</h1>
-}
-
-function RegularComponent() {
-    return <h1>Anyone can access this component</h1>
-}
-// component names are case sentive and need upper camel case
-
-function App({authorised}) {
+function App() {
+    const [emotion, setEmotion] = useState('happy');
     return (
         <>
-        {authorised ? <SecretComponent /> : <RegularComponent />}
+        <h1>Hello</h1>
+        <p>Current emotion is {emotion}</p>
+        <button onClick={() => setEmotion('happy')}>
+            Happy
+        </button>
+        <button onClick={() => setEmotion('frustrated')}>
+            Frustrate
+        </button>
+        <button onClick={() => setEmotion('enthusiastic')}>
+            Enthuse
+        </button>
         </>
     );
 }
