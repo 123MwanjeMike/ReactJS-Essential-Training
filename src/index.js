@@ -5,7 +5,7 @@ import reportWebVitals from "./reportWebVitals";
 import App from "./App"
 
 ReactDOM.render(
-  <App />,
+  <App login="123MwanjeMike" />,
   document.getElementById('root')
 );
 
