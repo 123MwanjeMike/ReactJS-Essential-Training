@@ -1,6 +1,6 @@
 # Learning React.Js
 
-This project was generated during the [React.js Essential Training](https://www.linkedin.com/learning/react-js-essential-training) course code-along
+This project was generated during the [React.js Essential Training](https://www.linkedin.com/learning/react-js-essential-training) course code-along with [Eve Porcello](https://github.com/eveporcello)
 
 ## Getting Started with Create React App
 
